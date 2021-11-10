@@ -1,6 +1,6 @@
 library(ggplot2)
 # Create a scatterplot
-ggplot(mtcars, aes(x = mpg, y = hp)) +
+ggplot(mtcars,aes(x = mpg, y = hp))+
   geom_smooth() +
   geom_point(alpha = 0.5) +
   labs(
@@ -8,3 +8,4 @@ ggplot(mtcars, aes(x = mpg, y = hp)) +
     caption = "Data: 1974 Motor Trend US magazine"
   ) +
   facet_wrap(~gear)
+
